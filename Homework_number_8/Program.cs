@@ -10,14 +10,18 @@ namespace Homework_number_8
     {
         static void Main(string[] args)
         {
-            int numberOfSms;
+            int numberRepeats;
+            string message;
 
             Console.Write("Укажите сколько раз вам вывести смс: ");
-            numberOfSms = Convert.ToInt32(Console.ReadLine());
+            numberRepeats = Convert.ToInt32(Console.ReadLine());
 
-            for (int i = 0; i < numberOfSms; i++)
+            Console.Write("Укажите текст смс: ");
+            message = Console.ReadLine();
+
+            for (int i = 0; i < numberRepeats; i++)
             {
-                Console.WriteLine($"Смс номер: {i}");
+                Console.WriteLine(message);
             }
         }
     }
